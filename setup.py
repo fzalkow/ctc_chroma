@@ -31,6 +31,6 @@ setup(name='ctc_chroma',
         'tqdm == 4.36.*',
         'numba == 0.48.*',
         'librosa == 0.7.*',
-        'tensorflow == 2.1.*',
+        'tensorflow == 2.*',
         ],
       python_requires='>=3.6')
