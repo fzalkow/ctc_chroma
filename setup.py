@@ -5,7 +5,7 @@ with open('README.md', 'r') as stream:
     long_description = stream.read()
 
 setup(name='ctc_chroma',
-      version='1.2',
+      version='1.3',
       description='Repository for the following paper. Frank Zalkow and Meinard Müller, '
                   'Using Weakly Aligned Score–Audio Pairs to Train Deep Chroma Models for '
                   'Cross-Modal Music Retrieval, ISMIR 2020.',
@@ -25,7 +25,7 @@ setup(name='ctc_chroma',
       keywords='audio music sound',
       install_requires=[
         'numpy == 1.16.*',
-        'scipy == 1.*.*',
+        'scipy == 1.*',
         'matplotlib == 2.0.*',
         'ipython == 7.7.*',
         'jupyter == 1.0.*',
