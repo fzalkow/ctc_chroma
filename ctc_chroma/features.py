@@ -100,7 +100,7 @@ def compute_hcqt_median(fn_wav, feature_rate):
     eps = np.finfo(float).eps
     new_times = np.arange(times[0], times[-1] + eps, 1.0/feature_rate)  # add eps to include last time point
 
-    return median_bin_salience(hcqt, times, new_times, axis=-1), times, freqs
+    return median_bin_salience(hcqt, times, new_times, axis=-1), new_times, freqs
 
 
 def median_bin_salience(salience, old_times, new_times, axis=1):
