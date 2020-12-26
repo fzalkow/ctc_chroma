@@ -2,3 +2,5 @@
 .ipynb_checkpoints
 *.egg-info
 *.html
+build/
+dist/

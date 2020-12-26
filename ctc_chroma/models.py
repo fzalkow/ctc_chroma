@@ -20,6 +20,35 @@ from tensorflow.keras.models import Model
 import tensorflow.keras.backend as K
 
 
+IDS = [
+    'v1_ctc_train1234valid5',
+    'v1_ctc_train123valid4',
+    'v1_ctc_train2345valid1',
+    'v1_ctc_train234valid5',
+    'v1_ctc_train3451valid2',
+    'v1_ctc_train345valid1',
+    'v1_ctc_train4512valid3',
+    'v1_ctc_train451valid2',
+    'v1_ctc_train5123valid4',
+    'v1_ctc_train512valid3',
+    'v2_ctc_train123valid4',
+    'v2_ctc_train234valid5',
+    'v2_ctc_train345valid1',
+    'v2_ctc_train451valid2',
+    'v2_ctc_train512valid3',
+    'v2_linear_train123valid4',
+    'v2_linear_train234valid5',
+    'v2_linear_train345valid1',
+    'v2_linear_train451valid2',
+    'v2_linear_train512valid3',
+    'v2_strong_train123valid4',
+    'v2_strong_train234valid5',
+    'v2_strong_train345valid1',
+    'v2_strong_train451valid2',
+    'v2_strong_train512valid3'
+]
+
+
 def get_model_noweigts():
     num_pitches = 216
     num_harmonics = 6
@@ -46,6 +75,9 @@ def get_model_noweigts():
 
 
 def get_model(model_id):
+    if model_id not in IDS:
+        raise RuntimeError(f'Model identifier "{model_id}" is not valid.')
+
     model = get_model_noweigts()
     dir_path = os.path.dirname(os.path.realpath(__file__))
     path_model = os.path.join(dir_path, 'models', 'model_' + model_id)
