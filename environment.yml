@@ -15,4 +15,4 @@ dependencies:
   - numba==0.48.*
   - pip:
     - librosa==0.7.*
-    - tensorflow==2.*.*
+    - tensorflow==2.*
