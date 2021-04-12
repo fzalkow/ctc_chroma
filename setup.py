@@ -5,14 +5,14 @@ with open('README.md', 'r') as stream:
     long_description = stream.read()
 
 setup(name='ctc_chroma',
-      version='2.0',
+      version='2.1',
       description='CTC-based chroma feature exractors',
       author='Frank Zalkow',
       author_email='frank.zalkow@audiolabs-erlangen.de',
       url='https://github.com/fzalkow/ctc_chroma',
       long_description=long_description,
       long_description_content_type='text/markdown',
-      package_data={'': ['audio/*']},
+      package_data={'': ['audio/*'], 'ctc_chroma': ['models/*']},
       license='MIT',
       packages=['ctc_chroma'],
       classifiers=[
