@@ -8,10 +8,6 @@ This repository contains accompanying code for the following papers. If you use 
 
 [2]: Frank Zalkow and Meinard Müller: [CTC-Based Learning of Deep Chroma Features for Cross-Modal Music Retrieval.](https://doi.org/10.1109/TASLP.2021.3110137)  In IEEE/ACM Transactions on Audio, Speech, and Language Processing. 2021. DOI: 10.1109/TASLP.2021.3110137. [[Accompanying website]](https://www.audiolabs-erlangen.de/resources/MIR/2021_TASLP-ctc-chroma)
 
-There is an accompanying website for the paper.
-
-https://www.audiolabs-erlangen.de/resources/MIR/2020-ISMIR-ctc-chroma
-
 ## Usage
 
 You can install the code in this repository with pip:
